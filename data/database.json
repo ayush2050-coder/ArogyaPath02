@@ -1,0 +1,806 @@
+{
+  "users": [
+    {
+      "id": "usr_pat_1",
+      "name": "Ramesh Kumar",
+      "email": "ramesh.kumar@arogyapath.org",
+      "phone": "+91 98765 43210",
+      "role": "patient",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "languagePreference": "hi",
+      "assignedVillage": "Shivpur, Varanasi"
+    },
+    {
+      "id": "usr_doc_1",
+      "name": "Dr. Anita Sharma",
+      "email": "anita.sharma@arogyapath.org",
+      "phone": "+91 94152 11223",
+      "role": "doctor",
+      "specialty": "General Medicine & Infectious Diseases",
+      "qualification": "MBBS, MD (General Medicine) - IMS BHU",
+      "hospitalId": "hosp_1",
+      "hospitalName": "District Hospital Varanasi (Pandit Deen Dayal)",
+      "avatar": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&auto=format&fit=crop&q=80",
+      "languagePreference": "en"
+    },
+    {
+      "id": "usr_hw_1",
+      "name": "Sunita Devi",
+      "email": "sunita.asha@arogyapath.org",
+      "phone": "+91 91234 56789",
+      "role": "health_worker",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+      "languagePreference": "hi",
+      "assignedVillage": "Shivpur Sub-Centre, Varanasi"
+    },
+    {
+      "id": "usr_hosp_1",
+      "name": "Dr. Vikram Malhotra",
+      "email": "admin.dhv@arogyapath.org",
+      "phone": "+91 98390 99887",
+      "role": "hospital_admin",
+      "hospitalId": "hosp_1",
+      "hospitalName": "District Hospital Varanasi (Pandit Deen Dayal)",
+      "languagePreference": "en"
+    },
+    {
+      "id": "usr_admin_1",
+      "name": "Rajesh Verma",
+      "email": "system.admin@arogyapath.org",
+      "phone": "+91 99887 66554",
+      "role": "admin",
+      "languagePreference": "en"
+    }
+  ],
+  "patients": [
+    {
+      "id": "pat_1",
+      "userId": "usr_pat_1",
+      "uhid": "ABHA-91-4821-3942-12",
+      "name": "Ramesh Kumar",
+      "age": 48,
+      "gender": "Male",
+      "contact": "+91 98765 43210",
+      "address": {
+        "village": "Shivpur Rural",
+        "district": "Varanasi",
+        "state": "Uttar Pradesh",
+        "pincode": "221003"
+      },
+      "emergencyContact": {
+        "name": "Suman Devi",
+        "relation": "Wife",
+        "phone": "+91 98765 43211"
+      },
+      "bloodGroup": "B+",
+      "allergies": [
+        "Penicillin"
+      ],
+      "existingConditions": [
+        "Type 2 Diabetes (5 yrs)",
+        "Mild Hypertension"
+      ],
+      "currentMedicines": [
+        "Metformin 500mg (twice daily)",
+        "Amlodipine 5mg (morning)"
+      ],
+      "previousSurgeries": [
+        "Appendectomy (2014)"
+      ],
+      "familyHistory": "Father had hypertension and stroke",
+      "createdAt": "2026-08-15T09:30:00Z"
+    },
+    {
+      "id": "pat_2",
+      "uhid": "ABHA-91-2294-8172-55",
+      "name": "Geeta Devi",
+      "age": 34,
+      "gender": "Female",
+      "contact": "+91 97654 32109",
+      "address": {
+        "village": "Cholapur",
+        "district": "Varanasi",
+        "state": "Uttar Pradesh",
+        "pincode": "221101"
+      },
+      "emergencyContact": {
+        "name": "Ram Prasad",
+        "relation": "Husband",
+        "phone": "+91 97654 32108"
+      },
+      "bloodGroup": "O+",
+      "allergies": [
+        "Sulfa drugs"
+      ],
+      "existingConditions": [
+        "Iron Deficiency Anemia"
+      ],
+      "currentMedicines": [
+        "Ferrous Ascorbate + Folic Acid tabs"
+      ],
+      "previousSurgeries": [],
+      "createdAt": "2026-08-20T11:00:00Z"
+    },
+    {
+      "id": "pat_3",
+      "uhid": "ABHA-91-7731-9024-88",
+      "name": "Anil Yadav",
+      "age": 26,
+      "gender": "Male",
+      "contact": "+91 96543 21098",
+      "address": {
+        "village": "Kashi Vidyapeeth",
+        "district": "Varanasi",
+        "state": "Uttar Pradesh",
+        "pincode": "221002"
+      },
+      "emergencyContact": {
+        "name": "Dinesh Yadav",
+        "relation": "Brother",
+        "phone": "+91 96543 21099"
+      },
+      "bloodGroup": "A+",
+      "allergies": [],
+      "existingConditions": [],
+      "currentMedicines": [],
+      "previousSurgeries": [],
+      "createdAt": "2026-09-01T08:15:00Z"
+    }
+  ],
+  "hospitals": [
+    {
+      "id": "hosp_1",
+      "name": "District Hospital Varanasi (Pt. Deen Dayal Upadhyaya)",
+      "nameHindi": "जिला चिकित्सालय वाराणसी (पं. दीनदयाल उपाध्याय)",
+      "type": "District Hospital",
+      "district": "Varanasi",
+      "state": "Uttar Pradesh",
+      "address": "Pandeypur, Varanasi, UP 221002",
+      "contactPhone": "+91 542 2508101",
+      "emergencyPhone": "108 / +91 542 2508100",
+      "distanceKm": 4.8,
+      "ayushmanEmpaneled": true,
+      "facilities": [
+        "24x7 Emergency",
+        "ICU",
+        "Pathology Lab",
+        "Digital X-Ray",
+        "Dialysis",
+        "Free Generic Pharmacy (Jan Aushadhi)"
+      ],
+      "departments": [
+        "General Medicine",
+        "Pulmonology",
+        "Pediatrics",
+        "Orthopedics",
+        "Gynecology",
+        "Cardiology",
+        "Ophthalmology"
+      ],
+      "bedAvailability": {
+        "total": 250,
+        "available": 38,
+        "icuAvailable": 6
+      },
+      "rating": 4.6,
+      "timings": "OPD: 8:00 AM - 2:00 PM (Mon-Sat)"
+    },
+    {
+      "id": "hosp_2",
+      "name": "AIIMS - Apex Healthcare Centre",
+      "nameHindi": "एम्स (अखिल भारतीय आयुर्विज्ञान संस्थान)",
+      "type": "AIIMS / Apex",
+      "district": "Varanasi/Regional",
+      "state": "Uttar Pradesh",
+      "address": "Medical Enclave, Apex Hub, UP",
+      "contactPhone": "+91 11 26588500",
+      "emergencyPhone": "102 / 108",
+      "distanceKm": 14.2,
+      "ayushmanEmpaneled": true,
+      "facilities": [
+        "Super Specialty OPD",
+        "Trauma Centre",
+        "Advanced MRI/CT",
+        "Cath Lab",
+        "Blood Bank",
+        "Tele-Consultation Hub"
+      ],
+      "departments": [
+        "General Medicine",
+        "Cardiology",
+        "Neurology",
+        "Pulmonology",
+        "Nephrology",
+        "General Surgery",
+        "Endocrinology"
+      ],
+      "bedAvailability": {
+        "total": 600,
+        "available": 72,
+        "icuAvailable": 14
+      },
+      "rating": 4.9,
+      "timings": "OPD: 8:30 AM - 3:30 PM (Mon-Fri)"
+    },
+    {
+      "id": "hosp_3",
+      "name": "Community Health Centre (CHC) Cholapur",
+      "nameHindi": "सामुदायिक स्वास्थ्य केंद्र (सीएचसी) चोलापुर",
+      "type": "Community Health Centre (CHC)",
+      "district": "Varanasi",
+      "state": "Uttar Pradesh",
+      "address": "Cholapur Main Road, Varanasi Rural, UP 221101",
+      "contactPhone": "+91 542 2614220",
+      "emergencyPhone": "108",
+      "distanceKm": 8.5,
+      "ayushmanEmpaneled": true,
+      "facilities": [
+        "Basic Emergency",
+        "OPD Clinic",
+        "Maternal & Child Care",
+        "Basic Lab Testing",
+        "Immunization Center"
+      ],
+      "departments": [
+        "General Medicine",
+        "Pediatrics",
+        "Gynecology & Obstetrics"
+      ],
+      "bedAvailability": {
+        "total": 30,
+        "available": 11,
+        "icuAvailable": 0
+      },
+      "rating": 4.2,
+      "timings": "OPD: 8:00 AM - 2:00 PM"
+    },
+    {
+      "id": "hosp_4",
+      "name": "Primary Health Centre (PHC) Shivpur",
+      "nameHindi": "प्राथमिक स्वास्थ्य केंद्र (पीएचसी) शिवपुर",
+      "type": "Primary Health Centre (PHC)",
+      "district": "Varanasi",
+      "state": "Uttar Pradesh",
+      "address": "Near Old Police Outpost, Shivpur, Varanasi 221003",
+      "contactPhone": "+91 542 2280199",
+      "emergencyPhone": "108",
+      "distanceKm": 1.8,
+      "ayushmanEmpaneled": true,
+      "facilities": [
+        "Primary OPD",
+        "First Aid",
+        "Fever Clinic",
+        "DOTS Center",
+        "Essential Medicines Counter"
+      ],
+      "departments": [
+        "General Medicine",
+        "Family Welfare"
+      ],
+      "bedAvailability": {
+        "total": 10,
+        "available": 5,
+        "icuAvailable": 0
+      },
+      "rating": 4.1,
+      "timings": "OPD: 9:00 AM - 2:00 PM"
+    }
+  ],
+  "doctors": [
+    {
+      "id": "doc_1",
+      "name": "Dr. Anita Sharma",
+      "qualification": "MBBS, MD (General Medicine)",
+      "specialty": "General Medicine & Infectious Diseases",
+      "department": "General Medicine",
+      "hospitalId": "hosp_1",
+      "hospitalName": "District Hospital Varanasi (Pt. Deen Dayal)",
+      "experienceYears": 14,
+      "languages": [
+        "Hindi",
+        "Bhojpuri",
+        "English"
+      ],
+      "rating": 4.8,
+      "consultationFee": 0,
+      "availableDays": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "timeSlots": [
+        "08:30 AM",
+        "09:15 AM",
+        "10:00 AM",
+        "10:45 AM",
+        "11:30 AM",
+        "12:15 PM",
+        "01:00 PM"
+      ],
+      "opdRoom": "OPD Room 104 (Ground Floor)",
+      "avatar": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "doc_2",
+      "name": "Dr. Manoj Tripathi",
+      "qualification": "MBBS, MD, DM (Cardiology)",
+      "specialty": "Interventional Cardiology",
+      "department": "Cardiology",
+      "hospitalId": "hosp_1",
+      "hospitalName": "District Hospital Varanasi (Pt. Deen Dayal)",
+      "experienceYears": 18,
+      "languages": [
+        "Hindi",
+        "English"
+      ],
+      "rating": 4.9,
+      "consultationFee": 0,
+      "availableDays": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ],
+      "timeSlots": [
+        "09:00 AM",
+        "09:45 AM",
+        "10:30 AM",
+        "11:15 AM",
+        "12:00 PM"
+      ],
+      "opdRoom": "OPD Room 208 (Cardiology Wing)",
+      "avatar": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "doc_3",
+      "name": "Dr. S. K. Pathak",
+      "qualification": "MBBS, DTCD, MD (Chest & Respiratory Diseases)",
+      "specialty": "Pulmonology & Respiratory Medicine",
+      "department": "Pulmonology",
+      "hospitalId": "hosp_1",
+      "hospitalName": "District Hospital Varanasi (Pt. Deen Dayal)",
+      "experienceYears": 12,
+      "languages": [
+        "Hindi",
+        "Bhojpuri",
+        "English"
+      ],
+      "rating": 4.7,
+      "consultationFee": 0,
+      "availableDays": [
+        "Tue",
+        "Thu",
+        "Sat"
+      ],
+      "timeSlots": [
+        "08:45 AM",
+        "09:30 AM",
+        "10:15 AM",
+        "11:00 AM",
+        "11:45 AM",
+        "12:30 PM"
+      ],
+      "opdRoom": "OPD Room 112 (Chest Clinic)",
+      "avatar": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "doc_4",
+      "name": "Dr. Priya Nambiar",
+      "qualification": "MBBS, MS (Obstetrics & Gynecology)",
+      "specialty": "Maternal Health & High-Risk Pregnancy",
+      "department": "Gynecology",
+      "hospitalId": "hosp_3",
+      "hospitalName": "CHC Cholapur",
+      "experienceYears": 10,
+      "languages": [
+        "Hindi",
+        "English",
+        "Malayalam"
+      ],
+      "rating": 4.7,
+      "consultationFee": 0,
+      "availableDays": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "timeSlots": [
+        "09:00 AM",
+        "10:00 AM",
+        "11:00 AM",
+        "12:00 PM",
+        "01:00 PM"
+      ],
+      "opdRoom": "MCH Wing Room 3",
+      "avatar": "https://images.unsplash.com/photo-1594824813628-98e6c466e300?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "doc_5",
+      "name": "Dr. Alok Srivastava",
+      "qualification": "MBBS (General Practitioner)",
+      "specialty": "Primary Care & Family Medicine",
+      "department": "General Medicine",
+      "hospitalId": "hosp_4",
+      "hospitalName": "PHC Shivpur",
+      "experienceYears": 8,
+      "languages": [
+        "Hindi",
+        "Bhojpuri"
+      ],
+      "rating": 4.5,
+      "consultationFee": 0,
+      "availableDays": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "timeSlots": [
+        "09:30 AM",
+        "10:15 AM",
+        "11:00 AM",
+        "11:45 AM",
+        "12:30 PM",
+        "01:15 PM"
+      ],
+      "opdRoom": "Doctor Cabin 1",
+      "avatar": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=150&auto=format&fit=crop&q=80"
+    }
+  ],
+  "cases": [
+    {
+      "id": "case_101",
+      "patientId": "pat_1",
+      "patientName": "Ramesh Kumar",
+      "patientAge": 48,
+      "patientGender": "Male",
+      "patientUhid": "ABHA-91-4821-3942-12",
+      "healthWorkerId": "usr_hw_1",
+      "healthWorkerName": "Sunita Devi (ASHA)",
+      "createdByRole": "health_worker",
+      "originalStatement": "चार दिन से बहुत तेज बुखार आ रहा है, ठंड लगकर कंपकंपी होती है। शाम को बुखार 102 डिग्री तक पहुंच जाता है। सिर में तेज दर्द है और बदन टूट रहा है। भूख बिल्कुल नहीं लग रही है और कमजोरी से चक्कर आ रहा है। पेरासिटामोल लेने पर थोड़ा आराम मिलता है पर 4-5 घंटे बाद फिर चढ़ जाता है।",
+      "language": "hi",
+      "chiefComplaint": "High-grade fever with chills and rigor, severe myalgia, and profound weakness for 4 days.",
+      "symptoms": [
+        {
+          "name": "Fever with chills & rigor",
+          "nameHindi": "ठंड लगकर तेज बुखार",
+          "severity": "severe",
+          "duration": "4 days",
+          "notes": "Peaks in evenings up to 102°F, temporarily relieved with paracetamol"
+        },
+        {
+          "name": "Severe headache & body ache",
+          "nameHindi": "सिरदर्द एवं बदन दर्द",
+          "severity": "moderate",
+          "duration": "4 days",
+          "notes": "Generalized throbbing pain"
+        },
+        {
+          "name": "Loss of appetite (Anorexia)",
+          "nameHindi": "भूख न लगना",
+          "severity": "moderate",
+          "duration": "3 days"
+        },
+        {
+          "name": "Dizziness & generalized asthenia",
+          "nameHindi": "चक्कर आना एवं भारी कमजोरी",
+          "severity": "moderate",
+          "duration": "2 days"
+        }
+      ],
+      "overallDuration": "4 days",
+      "severityScore": 7,
+      "severityLevel": "Moderate",
+      "relevantHistory": "Known Type 2 Diabetes for 5 years on oral hypoglycemics. Last HbA1c 7.8% (3 months ago).",
+      "currentMedicines": "Metformin 500mg BD, Amlodipine 5mg OD, Paracetamol 650mg SOS",
+      "knownAllergies": "Penicillin (developed skin rashes in 2018)",
+      "previousConditions": "Type 2 Diabetes Mellitus, Mild Systemic Hypertension",
+      "importantMissingInfo": [
+        "Recent random blood glucose (RBS) level",
+        "Platelet count & Dengue NS1/Malaria MP slide report",
+        "Blood pressure reading today"
+      ],
+      "redFlags": {
+        "detected": false,
+        "severityLevel": "Moderate",
+        "reason": "Diabetic patient with high persistent fever needs early clinical evaluation to prevent diabetic ketoacidosis or secondary sepsis."
+      },
+      "recommendedDepartment": "General Medicine",
+      "recommendedSpecialty": "Internal Medicine / Infectious Disease Clinic",
+      "triageLevel": "Priority",
+      "status": "submitted",
+      "offlineSyncStatus": "synced",
+      "createdAt": "2026-09-07T14:20:00Z",
+      "updatedAt": "2026-09-07T14:25:00Z"
+    },
+    {
+      "id": "case_102",
+      "patientId": "pat_2",
+      "patientName": "Geeta Devi",
+      "patientAge": 34,
+      "patientGender": "Female",
+      "patientUhid": "ABHA-91-2294-8172-55",
+      "createdByRole": "patient",
+      "originalStatement": "I have had continuous dull lower abdominal pain for the last 10 days along with unusual fatigue and breathlessness while walking uphill in the village.",
+      "language": "en",
+      "chiefComplaint": "Lower abdominal dull aching pain for 10 days with exertional dyspnea.",
+      "symptoms": [
+        {
+          "name": "Lower abdominal pain",
+          "severity": "moderate",
+          "duration": "10 days",
+          "notes": "Constant dull ache, non-radiating"
+        },
+        {
+          "name": "Fatigue and pallor",
+          "severity": "moderate",
+          "duration": "3 weeks",
+          "notes": "Worsening lethargy"
+        },
+        {
+          "name": "Shortness of breath on exertion",
+          "severity": "mild",
+          "duration": "1 week",
+          "notes": "Upon climbing stairs or carrying water"
+        }
+      ],
+      "overallDuration": "10 days",
+      "severityScore": 5,
+      "severityLevel": "Moderate",
+      "relevantHistory": "Known chronic iron deficiency anemia. G2P2.",
+      "currentMedicines": "Iron and folic acid tablets",
+      "knownAllergies": "Sulfa antibiotics",
+      "previousConditions": "Anemia",
+      "importantMissingInfo": [
+        "Complete Blood Count (CBC) with Serum Ferritin",
+        "Pelvic Ultrasound (USG)"
+      ],
+      "redFlags": {
+        "detected": false,
+        "severityLevel": "Low"
+      },
+      "recommendedDepartment": "Gynecology",
+      "recommendedSpecialty": "Obstetrics & Gynecology / Primary Care",
+      "triageLevel": "Routine",
+      "status": "reviewed",
+      "doctorNotes": "Patient examined in OPD. Marked conjunctival pallor noted. Abdomen soft, tenderness localized to hypogastrium. Advised urgent CBC, USG Abdomen/Pelvis and stool for occult blood.",
+      "clinicalObservations": "Pallor +++, BP 110/70 mmHg, Pulse 88/min, Afebrile, SpO2 98%",
+      "provisionalDiagnosis": "Severe Microcytic Hypochromic Anemia with suspected pelvic inflammatory condition",
+      "prescribedAdvice": "1. Tab Doxycycline 100mg BD x 14 days\n2. Tab Metronidazole 400mg TDS x 10 days\n3. Inj Iron Sucrose IV infusion planned after CBC report\n4. Review in OPD with USG and CBC on Friday",
+      "followUpDate": "2026-09-12",
+      "reviewedByDoctorId": "doc_4",
+      "reviewedByDoctorName": "Dr. Priya Nambiar",
+      "reviewedAt": "2026-09-08T10:15:00Z",
+      "offlineSyncStatus": "synced",
+      "createdAt": "2026-09-06T11:00:00Z",
+      "updatedAt": "2026-09-08T10:15:00Z"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "apt_1788907983826",
+      "registrationNumber": "AP-REG-2026-9863",
+      "opdSlipNumber": "OPD-80602",
+      "caseId": "general_intake",
+      "patientId": "pat_1",
+      "patientName": "Ramesh Kumar",
+      "patientPhone": "+91 98765 43210",
+      "patientUhid": "ABHA-91-4821-3942-12",
+      "patientAge": 48,
+      "patientGender": "Male",
+      "hospitalId": "hosp_1",
+      "hospitalName": "District Hospital Varanasi (Pt. Deen Dayal Upadhyaya)",
+      "department": "General Medicine",
+      "doctorId": "doc_1",
+      "doctorName": "Dr. Anita Sharma",
+      "doctorSpecialty": "General Medicine & Infectious Diseases",
+      "date": "2026-09-09",
+      "timeSlot": "10:00 AM",
+      "opdRoom": "OPD Room 104 (Ground Floor)",
+      "status": "Confirmed",
+      "digitalReceipt": {
+        "qrCodePayload": "AROGYAPATH|apt_1788907983826|ABHA-91-4821-3942-12|hosp_1|doc_1|2026-09-09|10:00 AM|TOKEN-21",
+        "issuedAt": "2026-09-08T22:53:03.826Z",
+        "tokenNumber": 21,
+        "barcode": "AP98631560",
+        "validDate": "2026-09-09"
+      },
+      "notes": "Fever and chills for 4 days",
+      "createdAt": "2026-09-08T22:53:03.826Z"
+    },
+    {
+      "id": "apt_101",
+      "registrationNumber": "AP-REG-2026-8834",
+      "opdSlipNumber": "OPD-77291",
+      "caseId": "case_101",
+      "patientId": "pat_1",
+      "patientName": "Ramesh Kumar",
+      "patientPhone": "+91 98765 43210",
+      "patientUhid": "ABHA-91-4821-3942-12",
+      "patientAge": 48,
+      "patientGender": "Male",
+      "hospitalId": "hosp_1",
+      "hospitalName": "District Hospital Varanasi (Pt. Deen Dayal)",
+      "department": "General Medicine",
+      "doctorId": "doc_1",
+      "doctorName": "Dr. Anita Sharma",
+      "doctorSpecialty": "General Medicine & Infectious Diseases",
+      "date": "2026-09-09",
+      "timeSlot": "09:15 AM",
+      "opdRoom": "OPD Room 104 (Ground Floor)",
+      "status": "Confirmed",
+      "digitalReceipt": {
+        "qrCodePayload": "AROGYAPATH|APT-101|ABHA-91-4821-3942-12|HOSP-1|DOC-1|2026-09-09|09:15|TOKEN-14",
+        "issuedAt": "2026-09-07T14:30:00Z",
+        "tokenNumber": 14,
+        "barcode": "AP8834914821",
+        "validDate": "2026-09-09"
+      },
+      "notes": "Priority consultation booked for fever case documentation with diabetes history.",
+      "createdAt": "2026-09-07T14:30:00Z"
+    },
+    {
+      "id": "apt_102",
+      "registrationNumber": "AP-REG-2026-5512",
+      "opdSlipNumber": "OPD-61042",
+      "caseId": "case_102",
+      "patientId": "pat_2",
+      "patientName": "Geeta Devi",
+      "patientPhone": "+91 97654 32109",
+      "patientUhid": "ABHA-91-2294-8172-55",
+      "patientAge": 34,
+      "patientGender": "Female",
+      "hospitalId": "hosp_3",
+      "hospitalName": "CHC Cholapur",
+      "department": "Gynecology",
+      "doctorId": "doc_4",
+      "doctorName": "Dr. Priya Nambiar",
+      "doctorSpecialty": "Maternal Health & High-Risk Pregnancy",
+      "date": "2026-09-08",
+      "timeSlot": "10:00 AM",
+      "opdRoom": "MCH Wing Room 3",
+      "status": "Completed",
+      "digitalReceipt": {
+        "qrCodePayload": "AROGYAPATH|APT-102|ABHA-91-2294-8172-55|HOSP-3|DOC-4|2026-09-08|10:00|TOKEN-07",
+        "issuedAt": "2026-09-06T11:15:00Z",
+        "tokenNumber": 7,
+        "barcode": "AP5512912294",
+        "validDate": "2026-09-08"
+      },
+      "notes": "Initial consultation completed. Tests ordered.",
+      "createdAt": "2026-09-06T11:15:00Z"
+    }
+  ],
+  "reports": [
+    {
+      "id": "rep_1",
+      "patientId": "pat_1",
+      "title": "HbA1c & Fasting Glucose Profile",
+      "category": "Lab Report",
+      "uploadedBy": "Dr. Anita Sharma",
+      "uploadedAt": "2026-06-14T10:00:00Z",
+      "fileSize": "1.2 MB",
+      "fileUrl": "/reports/hba1c_ramesh.pdf",
+      "fileType": "application/pdf",
+      "summary": "HbA1c: 7.8% (Borderline Controlled), Fasting Glucose: 142 mg/dL."
+    },
+    {
+      "id": "rep_2",
+      "patientId": "pat_1",
+      "title": "Discharge Summary - Appendectomy (2014)",
+      "category": "Discharge Summary",
+      "uploadedBy": "Patient Upload",
+      "uploadedAt": "2026-08-15T09:45:00Z",
+      "fileSize": "2.4 MB",
+      "fileUrl": "/reports/surgery_summary_2014.pdf",
+      "fileType": "application/pdf",
+      "summary": "Laparoscopic appendectomy performed without complications. Uneventful recovery."
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif_1788907983826_1",
+      "userId": "usr_pat_1",
+      "role": "patient",
+      "title": "Appointment Confirmed",
+      "titleHindi": "अपॉइंटमेंट की पुष्टि हुई",
+      "message": "Your appointment with Dr. Anita Sharma at District Hospital Varanasi (Pt. Deen Dayal Upadhyaya) is confirmed for 2026-09-09 at 10:00 AM (Token #21, OPD Room 104 (Ground Floor)).",
+      "messageHindi": "District Hospital Varanasi (Pt. Deen Dayal Upadhyaya) में Dr. Anita Sharma के साथ आपका अपॉइंटमेंट 2026-09-09 को 10:00 AM बजे (टोकन #21, OPD Room 104 (Ground Floor)) पक्का हो गया है।",
+      "type": "appointment",
+      "read": false,
+      "timestamp": "2026-09-08T22:53:03.826Z",
+      "linkAction": "/appointments/apt_1788907983826"
+    },
+    {
+      "id": "notif_1",
+      "userId": "usr_pat_1",
+      "role": "patient",
+      "title": "OPD Appointment Confirmed",
+      "titleHindi": "ओपीडी अपॉइंटमेंट की पुष्टि",
+      "message": "Your appointment with Dr. Anita Sharma at District Hospital Varanasi is scheduled for 09 Sep 2026 at 09:15 AM (Token #14).",
+      "messageHindi": "जिला चिकित्सालय वाराणसी में डॉ. अनीता शर्मा के साथ आपका अपॉइंटमेंट 09 सितंबर 2026, सुबह 09:15 बजे (टोकन #14) निर्धारित है।",
+      "type": "appointment",
+      "read": false,
+      "timestamp": "2026-09-07T14:30:00Z",
+      "linkAction": "/appointments"
+    },
+    {
+      "id": "notif_2",
+      "userId": "usr_doc_1",
+      "role": "doctor",
+      "title": "New AI-Structured Case Received",
+      "titleHindi": "नया एआई-संरचित केस प्राप्त हुआ",
+      "message": "ASHA worker Sunita Devi has referred patient Ramesh Kumar (Fever with chills, Diabetic). Priority triage assigned.",
+      "messageHindi": "आशा कार्यकर्ता सुनीता देवी ने मरीज रमेश कुमार (बुखार, मधुमेह) को रेफर किया है। प्राथमिकता ट्रायज दिया गया है।",
+      "type": "case_reviewed",
+      "read": false,
+      "timestamp": "2026-09-07T14:25:00Z",
+      "linkAction": "/doctor"
+    },
+    {
+      "id": "notif_3",
+      "userId": "usr_hw_1",
+      "role": "health_worker",
+      "title": "Case Synced with District Hospital",
+      "titleHindi": "केस जिला अस्पताल के साथ सिंक हुआ",
+      "message": "Case #case_101 for Ramesh Kumar successfully synced with Central Health Registry and appointment allocated.",
+      "messageHindi": "रमेश कुमार का केस #case_101 केंद्रीय स्वास्थ्य रजिस्ट्री के साथ सफलतापूर्वक सिंक हो गया और टोकन आवंटित हुआ।",
+      "type": "sync",
+      "read": true,
+      "timestamp": "2026-09-07T14:26:00Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "audit_1788907983826_v8cq",
+      "timestamp": "2026-09-08T22:53:03.826Z",
+      "actorId": "usr_pat_1",
+      "actorName": "Ramesh Kumar",
+      "actorRole": "patient",
+      "action": "BOOK_APPOINTMENT",
+      "entityType": "Appointment",
+      "entityId": "apt_1788907983826",
+      "details": "Appointment booked with Dr. Anita Sharma at District Hospital Varanasi (Pt. Deen Dayal Upadhyaya) on 2026-09-09 10:00 AM"
+    },
+    {
+      "id": "audit_1",
+      "timestamp": "2026-09-07T14:20:00Z",
+      "actorId": "usr_hw_1",
+      "actorName": "Sunita Devi",
+      "actorRole": "health_worker",
+      "action": "CASE_CREATION",
+      "entityType": "CaseRecord",
+      "entityId": "case_101",
+      "details": "Created and structured case for patient Ramesh Kumar (ABHA-91-4821-3942-12) via AI case-taking intake."
+    },
+    {
+      "id": "audit_2",
+      "timestamp": "2026-09-07T14:30:00Z",
+      "actorId": "usr_hw_1",
+      "actorName": "Sunita Devi",
+      "actorRole": "health_worker",
+      "action": "APPOINTMENT_BOOKED",
+      "entityType": "Appointment",
+      "entityId": "apt_101",
+      "details": "Booked OPD slot with Dr. Anita Sharma at District Hospital Varanasi. Token #14 generated."
+    },
+    {
+      "id": "audit_3",
+      "timestamp": "2026-09-08T10:15:00Z",
+      "actorId": "usr_doc_1",
+      "actorName": "Dr. Priya Nambiar",
+      "actorRole": "doctor",
+      "action": "CLINICAL_NOTE_ADDED",
+      "entityType": "CaseRecord",
+      "entityId": "case_102",
+      "details": "Recorded clinical observations, provisional diagnosis, and follow-up plan for Geeta Devi."
+    }
+  ]
+}

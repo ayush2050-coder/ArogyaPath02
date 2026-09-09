@@ -1,0 +1,6 @@
+{
+  "name": "ArogyaPath",
+  "description": "Smart India Hackathon Healthcare Case-Taking & Coordination Platform for Rural and Underserved Communities (आरोग्य पथ - SIH26047)",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
